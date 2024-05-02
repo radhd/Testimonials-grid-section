@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.3rem;
+    background-color: #ECF2F8;
+}
+
+/* TYPOGRAPHY */
+
+.barlow-semi-condensed-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.barlow-semi-condensed-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+.white-text {
+    color: white;
+}
+
+p {
+    opacity: 0.7;
+}
+
+.client-text p {
+    font-size: 1.1rem;
+}
+
+/* Mobile 375px */
+
+/* Individual */
+
+.testimonials-main-grid {
+    display: grid;
+    gap: 24px;
+}
+
+.cards {
+    padding: 26px 32px 32px;
+    box-shadow: 40px 60px 50px -47px #48556A3F;
+}
+
+.img-default {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 28px;
+    width: 28px;
+    border: 2px solid #A775F1;
+    border-radius: 50%;
+}
+
+.individual {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+h1 {
+    padding: 18px 0 16px;
+}
+
+.card-white-bg {
+    background-color: white;
+}
+
+/* Daniel */
+
+.card1 {
+    background-color: #733FC8;
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 24px top;
+}
+
+.daniel {
+    background-image: url("images/image-daniel.jpg");
+}
+
+.card1 h1 {
+    padding-bottom: 40px;
+}
+
+
+/* Jonathan */
+
+.card2 {
+    background-color: #48556A;
+}
+
+.jonathan {
+    background-image: url("images/image-jonathan.jpg");
+}
+
+/* Jeanetta */
+
+.jeanette {
+    background-image: url("images/image-jeanette.jpg");
+}
+
+/* Patrick */
+
+.card4 {
+    background-color: #19202D;
+}
+
+.patrick {
+    background-image: url("images/image-patrick.jpg");
+}
+
+/* Kira */
+
+.kira {
+    background-image: url("images/image-kira.jpg");
+}
+
+/* Desktop 1440px */
+
+@media(min-width: 1024px) {
+
+    /* DESKTOP MAIN */
+
+    .testimonials-main-grid {
+        display: grid;
+        column-gap: 30px;
+        padding: 165px;
+    }
+
+    .card1 {
+        grid-column: 1/3;
+    }
+
+    .card2 {
+        grid-column: 3;
+    }
+    
+    .card3 {
+        grid-column: 1;
+    }
+
+    .card4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .card5 {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+    }
+}
